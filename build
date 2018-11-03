@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# generado inicialmente con comando
+# export APPNAME=bicimad_node && py2txt ~/dropbox/learning/docker.py | bash 
+docker build -t bicimad_node .
+docker run --rm -v $PWD:/data bicimad_node
+# interactive with bash
+# docker run --rm -v $PWD:/data -ti --entrypoint /bin/bash bicimad_node
